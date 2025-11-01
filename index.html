@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Block Beagle – Smart AI Wallet</title>
+  <style>
+    /* ---------- GENERAL STYLES ---------- */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #061a25; /* Dark background */
+      color: #e7d8b1; /* Light text color */
+      scroll-behavior: smooth;
+    }
+
+    a {
+      color: #c48e2e;
+      text-decoration: none;
+    }
+
+    h1, h2, h3 {
+      color: #c48e2e;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* ---------- HEADER ---------- */
+    header {
+      background-color: #061a25;
+      border-bottom: 2px solid #c48e2e;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: #c48e2e;
+    }
+
+    .nav-links a {
+      margin: 0 15px;
+      color: #e7d8b1;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #c48e2e;
+    }
+
+    /* ---------- HERO SECTION (HOME) ---------- */
+    #home {
+      text-align: center;
+      padding-top: 140px;
+    }
+
+    #home h1 {
+      font-size: 2.2rem;
+    }
+
+    #home p {
+      font-size: 1.1rem;
+      margin-top: 20px;
+    }
+
+    /* ---------- ABOUT SECTION ---------- */
+    #about p {
+      line-height: 1.6;
+    }
+
+    /* ---------- PROJECT SECTION ---------- */
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li::before {
+      content: "• ";
+      color: #c48e2e;
+    }
+
+    /* ---------- CONTACT SECTION ---------- */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: 20px auto;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #c48e2e;
+      background-color: #061a25;
+      color: #e7d8b1;
+      font-size: 1rem;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #e7d8b1;
+    }
+
+    button {
+      background-color: #c48e2e;
+      color: #061a25;
+      font-weight: bold;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e7d8b1;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background-color: #061a25;
+      border-top: 2px solid #c48e2e;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #c48e2e;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER with navigation links -->
+  <header>
+    <nav>
+      <div class="logo">BLOCK BEAGLE</div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home">
+    <h1>Smart AI Wallet for the New Era of Digital Finance</h1>
+    <p>Secure. Intelligent. Unified. Empower your financial future with Block Beagle.</p>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Block Beagle is developed by a team of experienced software engineers and AI specialists 
+      with years of expertise in fintech, blockchain, and cybersecurity.  
+      Our mission is to redefine how individuals and businesses manage their digital assets — 
+      securely, intelligently, and transparently.
+    </p>
+  </section>
+
+  <!-- PROJECT SECTION -->
+  <section id="project">
+    <h2>Our Features</h2>
+    <ul>
+      <li><strong>Secure auth.</strong> Fast, reliable access in real time.</li>
+      <li><strong>One-click export.</strong> Create reports in PDF or Excel.</li>
+      <li><strong>Transaction logs.</strong> Transparent and timestamped.</li>
+      <li><strong>Deep analytics.</strong> Visualize and understand your finances.</li>
+      <li><strong>CRM integration.</strong> Link wallets and track transfers.</li>
+      <li><strong>Unified wallets.</strong> Manage all your crypto and fiat in one secure place.</li>
+    </ul>
+
+    <h3>Why Block Beagle?</h3>
+    <p>
+      Your wallet deserves more than storage — it deserves intelligence, security, and clarity.  
+      Let AI protect your assets while you focus on growth.
+    </p>
+
+    <h3>Get Started Today</h3>
+    <ul>
+      <li>Experience intelligent finance with <strong>Block Beagle AI</strong>.</li>
+      <li>7-day free trial — includes 5 transactions.</li>
+      <li>Built for businesses, fintech startups, traders, and anyone managing digital payments.</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Get in touch with us or leave your message below.</p>
+
+    <!-- Contact form -->
+    <form action="MAILTO:youremail@example.com" method="post" enctype="text/plain">
+      <!-- Replace 'youremail@example.com' with your real email address -->
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="phone" placeholder="Phone (optional)" />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p><strong>WhatsApp:</strong> +598 9990 0916</p>
+    <p><strong>Address:</strong> Montevideo, Uruguay</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Block Beagle. All rights reserved.
+  </footer>
+</body>
+</html>
