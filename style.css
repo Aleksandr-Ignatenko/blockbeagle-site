@@ -1,0 +1,173 @@
+/* ---------- GLOBAL STYLES ---------- */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #061a25;
+  color: #e7d8b1;
+  scroll-behavior: smooth;
+  background-image: radial-gradient(rgba(190, 138, 41, 0.07) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+h1, h2, h3 {
+  color: #c48e2e;
+  text-align: center;
+}
+
+a {
+  color: #c48e2e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #e7d8b1;
+}
+
+section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background-color: rgba(6, 26, 37, 0.9);
+  border-bottom: 2px solid #c48e2e;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(5px);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #c48e2e;
+}
+
+.logo-img {
+  height: 32px;
+  margin-right: 10px;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  color: #e7d8b1;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #c48e2e;
+}
+
+/* ---------- HERO SECTION ---------- */
+#home {
+  text-align: center;
+  padding-top: 140px;
+  animation: fadeIn 1.5s ease-in;
+}
+
+#home h1 {
+  font-size: 2.4rem;
+}
+
+#home p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* ---------- ABOUT & PROJECT ---------- */
+#about p, #project p, #project ul {
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li::before {
+  content: "• ";
+  color: #c48e2e;
+}
+
+/* ---------- CONTACT ---------- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #c48e2e;
+  background-color: #061a25;
+  color: #e7d8b1;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #e7d8b1;
+  box-shadow: 0 0 10px rgba(196, 142, 46, 0.4);
+}
+
+button {
+  background-color: #c48e2e;
+  color: #061a25;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #e7d8b1;
+  transform: translateY(-2px);
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #061a25;
+  border-top: 2px solid #c48e2e;
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9rem;
+  color: #c48e2e;
+}
+
+/* ---------- ANIMATIONS ---------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  .nav-links {
+    margin-top: 10px;
+  }
+  #home h1 {
+    font-size: 1.8rem;
+  }
+}
