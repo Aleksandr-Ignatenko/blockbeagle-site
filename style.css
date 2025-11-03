@@ -171,3 +171,23 @@ footer {
     font-size: 1.8rem;
   }
 }
+/* ---------- LOGO EFFECTS ---------- */
+.logo-img.flipped {
+  transform: scaleX(-1);
+  transition: transform 0.3s ease;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  color: #c48e2e;
+  text-decoration: none;
+}
+
+.logo a:hover .logo-img {
+  transform: scaleX(-1.1);
+}
+
+.logo a:hover span {
+  color: #e7d8b1;
+}
