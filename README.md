@@ -8,7 +8,7 @@
 - Secure AI-powered authentication
 - Analytics and reporting
 - CRM integration
-- Unified crypto & fiat management 
+- Unified crypto & fiat management
 
 ---
 
