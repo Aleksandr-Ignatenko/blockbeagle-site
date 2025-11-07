@@ -191,3 +191,11 @@ footer {
 .logo a:hover span {
   color: #e7d8b1;
 }
+.label {
+  color: #BE8A29;
+  font-weight: 600;
+}
+
+.value {
+  color: #E9CD96;
+}
