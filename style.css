@@ -199,3 +199,15 @@ footer {
 .value {
   color: #E9CD96;
 }
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.contact-row img.icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
