@@ -187,37 +187,34 @@ if (hbEl) {
   hbEl.addEventListener('click', (e) => e.stopPropagation());
 }
 
-// back-to-top: показать при прокрутке и плавно наверх
-const backBtn = document.getElementById('backToTop');
-function toggleBackBtn() {
-  if (!backBtn) return;
-  if (window.scrollY > 300) backBtn.classList.add('show');
-  else backBtn.classList.remove('show');
-}
-window.addEventListener('scroll', toggleBackBtn);
-toggleBackBtn();
 
-if (backBtn) {
-  backBtn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-}
 </script>
 
 
 <script>
-// кнопка вверх
-const topBtn = document.getElementById("backToTop");
-topBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+const backBtn = document.getElementById('backToTop');
 
-window.addEventListener("scroll", () => {
-  topBtn.style.display = window.scrollY > 300 ? "block" : "none";
+function toggleBackBtn() {
+  if (window.scrollY > 300) {
+    backBtn.classList.add('show');
+  } else {
+    backBtn.classList.remove('show');
+  }
+}
+
+window.addEventListener('scroll', toggleBackBtn);
+
+backBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 </script>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
 
 
 </body>
 </html>
+
 
 
 
