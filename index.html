@@ -177,12 +177,15 @@ document.addEventListener('click', (e) => {
   if (!nav) return;
   const clickedInsideMenu = nav.contains(e.target);
   const clickedHamburger = hb && hb.contains(e.target);
+
   if (nav.classList.contains('open') && !clickedInsideMenu && !clickedHamburger) {
     nav.classList.remove('open');
     document.body.classList.remove('menu-open');
-    if (hb) hb.setAttribute('aria-expanded', 'false');
+    hb.classList.remove('open');
+    hb.setAttribute('aria-expanded', 'false');
   }
 });
+
 
 // не даём клику по гамбургеру «провалиться» к документу
 const hbEl = document.querySelector('.hamburger');
@@ -219,6 +222,7 @@ backBtn.addEventListener('click', () => {
 
 </body>
 </html>
+
 
 
 
