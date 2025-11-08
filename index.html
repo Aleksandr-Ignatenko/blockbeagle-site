@@ -42,6 +42,9 @@
           <span>BLOCK BEAGLE</span>
         </a>
       </div>
+
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      
       <div class="nav-links">
         <a href="#home" class="scroll-link">Home</a>
         <a href="#about" class="scroll-link">About</a>
@@ -150,8 +153,17 @@
   });
 </script>
 
+<script>
+function toggleMenu() {
+  const nav = document.querySelector('.nav-links');
+  nav.classList.toggle('open');
+}
+</script>
+
+  
 </body>
 </html>
+
 
 
 
