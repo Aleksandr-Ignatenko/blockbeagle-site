@@ -160,12 +160,15 @@
 <script>
 function toggleMenu() {
   const nav = document.querySelector('.nav-links');
-  const isOpen = nav.classList.toggle('open');
-  document.body.classList.toggle('menu-open', isOpen);
-  // для доступности
   const hb = document.querySelector('.hamburger');
-  if (hb) hb.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+
+  const isOpen = nav.classList.toggle('open');
+  hb.classList.toggle('open', isOpen);
+  document.body.classList.toggle('menu-open', isOpen);
+
+  hb.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
 }
+
 
 // закрывать меню по клику вне его
 document.addEventListener('click', (e) => {
@@ -191,6 +194,10 @@ if (hbEl) {
 </script>
 
 
+<button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
 <script>
 const backBtn = document.getElementById('backToTop');
 
@@ -209,11 +216,10 @@ backBtn.addEventListener('click', () => {
 });
 </script>
 
-<button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
-
 
 </body>
 </html>
+
 
 
 
