@@ -160,14 +160,54 @@
 <script>
 function toggleMenu() {
   const nav = document.querySelector('.nav-links');
-  const hamburger = document.querySelector('.hamburger');
+  const isOpen = nav.classList.toggle('open');
+  document.body.classList.toggle('menu-open', isOpen);
+  // для доступности
+  const hb = document.querySelector('.hamburger');
+  if (hb) hb.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+}
 
-  nav.classList.toggle('open');
-  hamburger.classList.toggle('open');
+// закрывать меню по клику вне его
+document.addEventListener('click', (e) => {
+  const nav = document.querySelector('.nav-links');
+  const hb = document.querySelector('.hamburger');
+  if (!nav) return;
+  const clickedInsideMenu = nav.contains(e.target);
+  const clickedHamburger = hb && hb.contains(e.target);
+  if (nav.classList.contains('open') && !clickedInsideMenu && !clickedHamburger) {
+    nav.classList.remove('open');
+    document.body.classList.remove('menu-open');
+    if (hb) hb.setAttribute('aria-expanded', 'false');
+  }
+});
+
+// не даём клику по гамбургеру «провалиться» к документу
+const hbEl = document.querySelector('.hamburger');
+if (hbEl) {
+  hbEl.addEventListener('click', (e) => e.stopPropagation());
+}
+
+// back-to-top: показать при прокрутке и плавно наверх
+const backBtn = document.getElementById('backToTop');
+function toggleBackBtn() {
+  if (!backBtn) return;
+  if (window.scrollY > 300) backBtn.classList.add('show');
+  else backBtn.classList.remove('show');
+}
+window.addEventListener('scroll', toggleBackBtn);
+toggleBackBtn();
+
+if (backBtn) {
+  backBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 }
 </script>
 
+
 <script>
+
+  
 // кнопка вверх
 const topBtn = document.getElementById("backToTop");
 topBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -183,6 +223,7 @@ window.addEventListener("scroll", () => {
 
 </body>
 </html>
+
 
 
 
