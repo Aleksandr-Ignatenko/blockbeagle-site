@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Block Beagle – Smart AI Wallet</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header id="header">
+    <nav>
+      <a href="#home" class="logo">
+        <img src="images/logo.png" alt="Block Beagle Logo" class="logo-img" onerror="this.style.display='none'">
+        <span class="logo-text">BLOCK BEAGLE</span>
+      </a>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger-icon">☰</span>
+        <span class="close-icon">✖</span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#project" class="nav-link">Features</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="hero-content">
+      <div class="hero-logo" id="heroLogo">
+        <img src="images/logo.png" alt="Block Beagle Logo" class="hero-logo-img" onerror="this.style.display='none'">
+        <div class="hero-logo-text">BLOCK BEAGLE</div>
+      </div>
+      <h1>Smart AI Wallet for the New Era of Digital Finance</h1>
+      <p>Secure. Intelligent. Unified. Empower your financial future with Block Beagle.</p>
+      <a href="#contact" class="cta-button">Get Started</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Us</h2>
+    <div class="about-content">
+      Block Beagle is developed by a team of experienced software engineers and AI specialists
+      with years of expertise in fintech, blockchain, and cybersecurity. Our mission is to redefine
+      how individuals and businesses manage their digital assets — securely, intelligently, and transparently.
+    </div>
+  </section>
+
+  <section id="project">
+    <h2 class="section-title">Our Features</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🔐</span>
+        <h3>Secure Authentication</h3>
+        <p>Fast, reliable access with enterprise-grade security in real time.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">📊</span>
+        <h3>One-Click Export</h3>
+        <p>Create comprehensive reports in PDF or Excel format instantly.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">📝</span>
+        <h3>Transaction Logs</h3>
+        <p>Transparent and timestamped records of all your activities.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">📈</span>
+        <h3>Deep Analytics</h3>
+        <p>Visualize and understand your financial data with AI insights.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🔗</span>
+        <h3>CRM Integration</h3>
+        <p>Seamlessly link wallets and track transfers across platforms.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">💼</span>
+        <h3>Unified Wallets</h3>
+        <p>Manage all your crypto and fiat assets in one secure place.</p>
+      </div>
+    </div>
+
+    <div class="why-content">
+      <h3 class="section-title" style="margin-top: 80px;">Why Block Beagle?</h3>
+      <p>
+        Your wallet deserves more than storage — it deserves intelligence, security, and clarity.
+        Let AI protect your assets while you focus on growth.
+      </p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-item">
+        <span class="stat-number">7</span>
+        <span class="stat-label">Days Free Trial</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">5</span>
+        <span class="stat-label">Free Transactions</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">24/7</span>
+        <span class="stat-label">AI Protection</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-container">
+      <p style="text-align: center; margin-bottom: 30px; font-size: clamp(0.95rem, 2vw, 1rem);">Get in touch with us or leave your message below.</p>
+
+      <form class="contact-form" action="MAILTO:youremail@example.com" method="post" enctype="text/plain">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <input type="text" name="phone" placeholder="Phone (optional)" />
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <div class="contact-row">
+          <img src="images/whatsapp.png" class="contact-icon" alt="WhatsApp" onerror="this.outerHTML='<span class=\'feature-icon\' style=\'font-size:24px;margin:0\'>📱</span>'">
+          <span class="label">WhatsApp:</span>
+          <span class="value">+598 9990 0916</span>
+        </div>
+        <div class="contact-row">
+          <img src="images/telegram.png" class="contact-icon" alt="Telegram" onerror="this.outerHTML='<span class=\'feature-icon\' style=\'font-size:24px;margin:0\'>✈️</span>'">
+          <span class="label">Telegram:</span>
+          <span class="value"><a href="https://t.me/BlockBeagle" target="_blank">@BlockBeagle</a></span>
+        </div>
+        <div class="contact-row">
+          <img src="images/location.png" class="contact-icon" alt="Location" onerror="this.outerHTML='<span class=\'feature-icon\' style=\'font-size:24px;margin:0\'>📍</span>'">
+          <span class="label">Location:</span>
+          <span class="value">Montevideo, Uruguay</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Block Beagle. All rights reserved. Designed by S7ruc7ureV01d.
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- Весь JS остаётся без изменений -->
+  <script>
+    /* ... весь твой JavaScript как есть ... */
+  </script>
+</body>
+</html>
