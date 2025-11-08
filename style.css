@@ -211,3 +211,46 @@ footer {
   height: 20px;
   object-fit: contain;
 }
+
+/* ------ MOBILE MENU ------ */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #c48e2e;
+  cursor: pointer;
+}
+
+/* Mobile behavior */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(6, 26, 37, 0.95);
+    border-bottom: 2px solid #c48e2e;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+}
+
