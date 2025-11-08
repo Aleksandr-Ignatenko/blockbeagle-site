@@ -317,23 +317,6 @@ footer {
   }
 }
 
-/* -------------------- BACK TO TOP BUTTON -------------------- */
-#backToTop {
-  display: none;
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background-color: #c48e2e;
-  color: #061a25;
-  font-size: 22px;
-  font-weight: bold;
-  padding: 12px 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-  z-index: 300;
-}
-
 #backToTop:hover {
   background-color: #e7d8b1;
 }
