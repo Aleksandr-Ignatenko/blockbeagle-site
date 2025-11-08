@@ -254,3 +254,86 @@ footer {
   }
 }
 
+/* -------------------- MOBILE MENU IMPROVED -------------------- */
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #c48e2e;
+  cursor: pointer;
+  position: relative;
+}
+
+.hamburger .close-icon {
+  display: none;
+}
+
+.hamburger.open .hamburger-icon {
+  display: none;
+}
+
+.hamburger.open .close-icon {
+  display: inline;
+}
+
+/* Fix header mobile logic */
+@media (max-width: 768px) {
+
+  /* Спрятать логотип в мобильном открытом меню */
+  nav.open .logo {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 200;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(6, 26, 37, 0.95);
+    border-bottom: 2px solid #c48e2e;
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 12px 0;
+    font-size: 1.2rem;
+  }
+}
+
+/* -------------------- BACK TO TOP BUTTON -------------------- */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #c48e2e;
+  color: #061a25;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  z-index: 300;
+}
+
+#backToTop:hover {
+  background-color: #e7d8b1;
+}
