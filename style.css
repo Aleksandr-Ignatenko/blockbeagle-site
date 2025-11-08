@@ -329,8 +329,9 @@ footer {
   border: 2px solid #c48e2e;
   background: rgba(6, 26, 37, 0.9);
   color: #c48e2e;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 700;
   text-align: center;
   cursor: pointer;
   z-index: 1000;
