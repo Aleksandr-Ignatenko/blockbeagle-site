@@ -12,4 +12,4 @@
 
 ---
 
-© 2025 Block Beagle. All rights reserved.
+© 2025 Block Beagle. All rights reserved. 
