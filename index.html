@@ -43,7 +43,10 @@
         </a>
       </div>
 
-      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span class="hamburger-icon">☰</span>
+        <span class="close-icon">✖</span>
+      </div>
       
       <div class="nav-links">
         <a href="#home" class="scroll-link">Home</a>
@@ -137,6 +140,7 @@
   <footer>
     © 2025 Block Beagle. All rights reserved.
   </footer>
+  
   <script>
   document.querySelectorAll('a.scroll-link').forEach(link => {
     link.addEventListener('click', function(e) {
@@ -156,13 +160,29 @@
 <script>
 function toggleMenu() {
   const nav = document.querySelector('.nav-links');
+  const hamburger = document.querySelector('.hamburger');
+
   nav.classList.toggle('open');
+  hamburger.classList.toggle('open');
 }
 </script>
 
+<script>
+// кнопка вверх
+const topBtn = document.getElementById("backToTop");
+topBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
+window.addEventListener("scroll", () => {
+  topBtn.style.display = window.scrollY > 300 ? "block" : "none";
+});
+</script>
+
+
+<div id="backToTop">▲</div>
   
 </body>
 </html>
+
 
 
 
