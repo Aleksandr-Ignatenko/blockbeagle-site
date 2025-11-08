@@ -353,8 +353,9 @@ footer {
     bottom: 12px;
     width: 54px;
     height: 54px;
-    font-size: 38px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 700;
   }
 }
 
