@@ -239,12 +239,22 @@
       pointer-events: none;
     }
 
-    .hero-logo-img {
-      height: clamp(120px, 20vw, 180px);
-      filter: drop-shadow(0 0 20px rgba(196, 142, 46, 0.4));
-      transform: scaleX(-1);
-      transition: filter 0.3s ease;
-    }
+      .hero-logo-img {
+        height: clamp(120px, 20vw, 180px);
+        width: clamp(120px, 20vw, 180px); /* Делаем пропорциональный квадрат */
+        object-fit: cover; /* Чтобы изображение ровно заполняло круг */
+        border-radius: 50%; /* Делаем круглым */
+        filter: drop-shadow(0 0 20px rgba(196, 142, 46, 0.4));
+        transform: scaleX(-1);
+        transition: 
+          filter 0.3s ease,
+          transform 0.3s ease; /* плавная анимация */
+      }
+
+      .hero-logo-img:hover {
+        transform: scaleX(-1) scale(1.08); /* Увеличение на 8% */
+        filter: drop-shadow(0 0 30px rgba(196, 142, 46, 0.6));
+      }
 
     .hero-logo-text {
       display: none;
