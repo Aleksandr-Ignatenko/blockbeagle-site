@@ -245,6 +245,7 @@
         aspect-ratio: 1 / 1; /* сохраняем круг даже при сжатии */    
         object-fit: cover; /* Чтобы изображение ровно заполняло круг */
         border-radius: 50%; /* Делаем круглым */
+        flex-shrink: 0; /* ← ОБЯЗАТЕЛЬНО ДЛЯ МОБИЛОК */    
         filter: drop-shadow(0 0 20px rgba(196, 142, 46, 0.4));
         transform: scaleX(-1);
         transition: 
