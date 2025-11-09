@@ -240,8 +240,9 @@
     }
 
       .hero-logo-img {
-        height: clamp(120px, 20vw, 180px);
-        width: clamp(120px, 20vw, 180px); /* Делаем пропорциональный квадрат */
+        height: clamp(120px, 25vw, 180px);
+        width: clamp(120px, 25vw, 180px); /* Делаем пропорциональный квадрат */
+        aspect-ratio: 1 / 1; /* сохраняем круг даже при сжатии */    
         object-fit: cover; /* Чтобы изображение ровно заполняло круг */
         border-radius: 50%; /* Делаем круглым */
         filter: drop-shadow(0 0 20px rgba(196, 142, 46, 0.4));
