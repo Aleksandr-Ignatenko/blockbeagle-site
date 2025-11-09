@@ -706,6 +706,27 @@
     .back-to-top:active {
       transform: translateY(-2px) scale(1.05);
     }
+      .footer-socials {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+      
+      .footer-socials img {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+        opacity: 0.85;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        filter: drop-shadow(0 0 10px rgba(190, 138, 41, 0.5));
+      }
+      
+      .footer-socials img:hover {
+        opacity: 1;
+        transform: translateY(-2px) scale(1.1);
+      }
+
 
     /* Animations */
     @keyframes fadeInUp {
