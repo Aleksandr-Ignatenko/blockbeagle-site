@@ -22,6 +22,10 @@
 /* =========================================================
    GLOBAL BACKGROUND & LAYOUT
 ========================================================= */
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
       background-color: var(--bg-dark);
@@ -38,7 +42,6 @@
 /* =========================================================
    GLOBAL UI EFFECTS (CURSOR, FX)
 ========================================================= */
-    /* Cursor follower - only on desktop */
     @media (pointer: fine) {
       .cursor-glow {
         position: fixed;
