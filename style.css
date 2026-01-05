@@ -939,7 +939,6 @@
       }
     }
 
-
     .success-close-btn {
       padding: clamp(12px, 2vw, 14px) clamp(30px, 5vw, 40px);
       background: var(--primary);
@@ -1076,8 +1075,8 @@
       }
 
      .legal-content {
-       padding-left: 12px;
-       padding-right: 12px;
+       padding-left: 16px;
+       padding-right: 16px;
      }
     }
 
