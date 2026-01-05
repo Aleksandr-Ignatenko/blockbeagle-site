@@ -750,16 +750,48 @@
       transform: translateY(-2px) scale(1.1);
     }
 
-   .footer-legal {
-     display: flex;
-     align-items: center;
-     gap: 12px;
-   }
-   
-   .footer-separator {
-     opacity: 0.4;
-     pointer-events: none;
-   }
+    .footer-legal {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+      
+    .footer-legal a {
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: clamp(0.85rem, 1.8vw, 0.9rem);
+      position: relative;
+      padding: 6px 0;
+      transition: color 0.3s ease;
+    }
+      
+    .footer-legal a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transform: translateX(-50%);
+      transition: width 0.3s ease;
+      box-shadow: 0 0 10px var(--glow);
+    }
+      
+    .footer-legal a:hover {
+      color: var(--primary);
+    }
+      
+    .footer-legal a:hover::after {
+      width: 100%;
+    }
+    
+    .footer-separator {
+      opacity: 0.4;
+      pointer-events: none;
+    }
 
 /* =========================================================
    FLOATING UI ELEMENTS
