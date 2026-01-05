@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- =========================================================
+     HEAD / META / ASSETS
+========================================================= -->  
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Terms & Conditions – Block Beagle</title>
-
+  <title>Block Beagle – Smart AI Wallet</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
+
+
+  <!-- ================= OPEN GRAPH ================= -->   
+  <meta property="og:title" content="Block Beagle – Smart AI Wallet" />
+  <meta property="og:description" content="AI-powered digital wallet with deep analytics, secure transactions and unified finance management." />
+  <meta property="og:image" content="https://www.blockbeagle.page.gd/images/preview.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://www.blockbeagle.page.gd/" />
+  <meta property="og:type" content="website" />
+
+  <!-- ================= TWITTER CARDS ================= -->     
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Block Beagle – Smart AI Wallet" />
+  <meta name="twitter:description" content="AI-powered digital wallet with deep analytics, secure transactions and unified finance management." />
+  <meta name="twitter:image" content="https://www.blockbeagle.page.gd/images/preview.jpg" />
+
 </head>
 <body>
 
-<div class="cursor-glow" id="cursorGlow"></div>
+<!-- =========================================================
+     GLOBAL UI EFFECTS
+========================================================= -->     
+  <div class="cursor-glow" id="cursorGlow"></div>
 
-<!-- ================= HEADER (UNCHANGED) ================= -->
-<header id="header">
-  <nav>
-    <a href="/#home" class="logo">
-      <img src="images/logo.png" alt="Block Beagle Logo" class="logo-img">
-      <span class="logo-text">BLOCK BEAGLE</span>
-    </a>
-    <button class="hamburger" onclick="toggleMenu()">
-      <span class="hamburger-icon">☰</span>
-      <span class="close-icon">✖</span>
-    </button>
-    <div class="nav-links" id="navLinks">
-      <a href="/#home" class="nav-link">Home</a>
-      <a href="/#about" class="nav-link">About</a>
-      <a href="/#project" class="nav-link">Features</a>
-      <a href="/#contact" class="nav-link">Contact</a>
-    </div>
-  </nav>
-</header>
+<!-- =========================================================
+     HEADER / NAVIGATION
+========================================================= -->  
+  <header id="header">
+    <nav>
+      <a href="#home" class="logo">
+        <img src="images/logo.png" alt="Block Beagle Logo" class="logo-img" onerror="this.style.display='none'">
+        <span class="logo-text">BLOCK BEAGLE</span>
+      </a>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger-icon">☰</span>
+        <span class="close-icon">✖</span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#project" class="nav-link">Features</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </nav>
+  </header>
 
 <!-- ================= CONTENT ================= -->
 <section style="padding: 120px 0;">
