@@ -18,78 +18,60 @@
 
 <header id="header">
   <nav>
-    <a href="/" class="logo">
+    <a href="/#home" class="logo">
       <img src="images/logo.png" alt="Block Beagle Logo" class="logo-img">
       <span class="logo-text">BLOCK BEAGLE</span>
     </a>
+    <button class="hamburger" onclick="toggleMenu()">
+      <span class="hamburger-icon">☰</span>
+      <span class="close-icon">✖</span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="/#home" class="nav-link">Home</a>
+      <a href="/#about" class="nav-link">About</a>
+      <a href="/#project" class="nav-link">Features</a>
+      <a href="/#contact" class="nav-link">Contact</a>
+    </div>
   </nav>
 </header>
 
 <section style="padding: 120px 0;">
   <div class="container" style="max-width: 900px; margin: 0 auto;">
     <h1 class="section-title">Terms & Conditions</h1>
-
     <p><strong>Last updated:</strong> March 2025</p>
 
-    <h3>1. Service Description</h3>
+    <h3>1. Service</h3>
     <p>
-      Block Beagle provides AI-powered blockchain transaction analysis and monitoring tools
-      for informational purposes only.
+      Block Beagle provides AI-powered blockchain transaction analysis tools for informational purposes only.
     </p>
 
-    <h3>2. Eligibility</h3>
+    <h3>2. User Responsibilities</h3>
     <p>
-      You must be at least 18 years old to use this service.
+      Users must comply with applicable laws and ensure lawful use of the platform.
     </p>
 
-    <h3>3. User Responsibilities</h3>
-    <p>
-      You are responsible for maintaining account security and lawful use of the platform.
-    </p>
-
-    <h3>4. Acceptable Use</h3>
-    <ul>
-      <li>No illegal activity</li>
-      <li>No system abuse or reverse engineering</li>
-      <li>No misrepresentation of analysis results</li>
-    </ul>
-
-    <h3>5. No Financial or Legal Advice</h3>
+    <h3>3. No Advice</h3>
     <p>
       Block Beagle does not provide financial, legal, or investment advice.
-      All results are AI-generated and informational.
     </p>
 
-    <h3>6. Limitation of Liability</h3>
+    <h3>4. Limitation of Liability</h3>
     <p>
-      We are not liable for losses resulting from reliance on platform data.
+      Use of the platform is at your own risk.
     </p>
 
-    <h3>7. Payments</h3>
-    <p>
-      Paid services are processed via third-party providers such as Paddle.
-    </p>
-
-    <h3>8. Termination</h3>
-    <p>
-      We may suspend or terminate access for violations of these terms.
-    </p>
-
-    <h3>9. Changes</h3>
-    <p>
-      Continued use of the platform implies acceptance of updated terms.
-    </p>
-
-    <h3>10. Contact</h3>
-    <p>
-      Email: <a href="mailto:office@block-beagle.com">office@block-beagle.com</a>
-    </p>
+    <h3>5. Contact</h3>
+    <p>Email: office@block-beagle.com</p>
   </div>
 </section>
 
 <footer>
+
   <div class="footer-socials">
     <a href="https://www.linkedin.com/company/block-beagle/" target="_blank"><img src="images/footer/linkedin.png"></a>
+    <a href="https://www.facebook.com/#" target="_blank"><img src="images/footer/facebook.png"></a>
+    <a href="https://www.instagram.com/#" target="_blank"><img src="images/footer/instagram.png"></a>
+    <a href="https://x.com/#" target="_blank"><img src="images/footer/twitter.png"></a>
     <a href="https://t.me/BlockBeagle" target="_blank"><img src="images/footer/telegram2.png"></a>
   </div>
 
@@ -99,9 +81,10 @@
 
   <div class="footer-legal">
     <a href="/privacy-policy">Privacy Policy</a>
-    <span>•</span>
+    <span class="footer-separator">•</span>
     <a href="/terms-and-conditions">Terms & Conditions</a>
   </div>
+
 </footer>
 
 <script src="script.js"></script>
