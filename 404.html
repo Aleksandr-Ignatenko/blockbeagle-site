@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- =========================================================
+     HEAD / META / ASSETS
+========================================================= -->  
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>404 – Block Beagle</title>
-
-  <!-- KEEP ALL ORIGINAL LINKS -->
+  <title>Block Beagle – Smart AI Wallet</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-
-  <!-- ORIGINAL STYLES -->
   <link rel="stylesheet" href="style.css">
+
+
+  <!-- ================= OPEN GRAPH ================= -->   
+  <meta property="og:title" content="Block Beagle – Smart AI Wallet" />
+  <meta property="og:description" content="AI-powered digital wallet with deep analytics, secure transactions and unified finance management." />
+  <meta property="og:image" content="https://www.blockbeagle.page.gd/images/preview.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://www.blockbeagle.page.gd/" />
+  <meta property="og:type" content="website" />
+
+  <!-- ================= TWITTER CARDS ================= -->     
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Block Beagle – Smart AI Wallet" />
+  <meta name="twitter:description" content="AI-powered digital wallet with deep analytics, secure transactions and unified finance management." />
+  <meta name="twitter:image" content="https://www.blockbeagle.page.gd/images/preview.jpg" />
+
 </head>
 <body>
+
+<!-- =========================================================
+     GLOBAL UI EFFECTS
+========================================================= -->     
   <div class="cursor-glow" id="cursorGlow"></div>
 
-  <!-- HEADER (UNCHANGED) -->
+<!-- =========================================================
+     HEADER / NAVIGATION
+========================================================= -->  
   <header id="header">
     <nav>
       <a href="#home" class="logo">
@@ -30,10 +54,10 @@
         <span class="close-icon">✖</span>
       </button>
       <div class="nav-links" id="navLinks">
-        <a href="/" class="nav-link">Home</a>
-        <a href="/#about" class="nav-link">About</a>
-        <a href="/#project" class="nav-link">Features</a>
-        <a href="/#contact" class="nav-link">Contact</a>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#project" class="nav-link">Features</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </div>
     </nav>
   </header>
@@ -60,42 +84,66 @@
     </div>
   </section>
 
-  <!-- FOOTER (UNCHANGED) -->
-  <footer>
-    <div class="footer-socials">
-      <a href="https://www.linkedin.com/company/block-beagle/" target="_blank" rel="noopener noreferrer">
-        <img src="images/footer/linkedin.png" alt="LinkedIn">
-      </a>
-      <a href="https://www.facebook.com/#" target="_blank" rel="noopener noreferrer">
-        <img src="images/footer/facebook.png" alt="Facebook">
-      </a>
-      <a href="https://www.instagram.com/#" target="_blank" rel="noopener noreferrer">
-        <img src="images/footer/instagram.png" alt="Instagram">
-      </a>
-      <a href="https://x.com/#" target="_blank" rel="noopener noreferrer">
-        <img src="images/footer/twitter.png" alt="Twitter">
-      </a>
-      <a href="https://t.me/BlockBeagle" target="_blank" rel="noopener noreferrer">
-        <img src="images/footer/telegram2.png" alt="Telegram">
-      </a>
-    </div>
-    
-    <!-- ================= COPYRIGHT ================= -->
-    <div class="footer-copyright">
-      © 2025 Block Beagle. All rights reserved.
-    </div>
+<!-- =========================================================
+     FOOTER
+========================================================= -->  
+<footer>
 
-      <!-- ================= LEGAL LINKS ================= -->
-    <div class="footer-legal">
-      <a href="/privacy-policy">Privacy Policy</a>
-      <span class="footer-separator">•</span>
-      <a href="/terms-and-conditions">Terms & Conditions</a>
-    </div>
-    
-  </footer>
+  <!-- ================= SOCIAL LINKS ================= -->     
+  <div class="footer-socials">
+    <a href="https://www.linkedin.com/company/block-beagle/" target="_blank" rel="noopener noreferrer">
+      <img src="images/footer/linkedin.png" alt="LinkedIn">
+    </a>
 
+    <a href="https://www.facebook.com/#" target="_blank" rel="noopener noreferrer">
+      <img src="images/footer/facebook.png" alt="Facebook">
+    </a>
+
+    <a href="https://www.instagram.com/#" target="_blank" rel="noopener noreferrer">
+      <img src="images/footer/instagram.png" alt="Instagram">
+    </a>
+
+    <a href="https://x.com/#" target="_blank" rel="noopener noreferrer">
+      <img src="images/footer/twitter.png" alt="Twitter">
+    </a>
+
+    <a href="https://t.me/BlockBeagle" target="_blank" rel="noopener noreferrer">
+      <img src="images/footer/telegram2.png" alt="Telegram">
+    </a>
+  </div>
+     
+  <!-- ================= COPYRIGHT ================= -->
+  <div class="footer-copyright">
+    © 2025 Block Beagle. All rights reserved.
+  </div>
+     
+  <!-- ================= LEGAL LINKS ================= -->
+  <div class="footer-legal">
+    <a href="/privacy-policy">Privacy Policy</a>
+    <span class="footer-separator">•</span>
+    <a href="/terms-and-conditions">Terms & Conditions</a>
+  </div>
+
+</footer>
+
+<!-- =========================================================
+     FLOATING / OVERLAY UI
+========================================================= -->
   <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
+<!-- ================= SUCCESS POPUP ================= -->     
+  <div class="success-popup" id="successPopup">
+    <div class="success-popup-content">
+      <div class="success-icon">✓</div>
+      <h3>Your message has been sent</h3>
+      <p>Thank you for contacting us. We'll get back to you soon!</p>
+      <button class="success-close-btn" id="closeSuccessPopup">OK</button>
+    </div>
+  </div>
+
+<!-- =========================================================
+     SCRIPTS
+========================================================= -->
   <script src="script.js"></script>
 </body>
 </html>
