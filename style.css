@@ -750,6 +750,17 @@
       transform: translateY(-2px) scale(1.1);
     }
 
+   .footer-legal {
+     display: flex;
+     align-items: center;
+     gap: 12px;
+   }
+   
+   .footer-separator {
+     opacity: 0.4;
+     pointer-events: none;
+   }
+
 /* =========================================================
    FLOATING UI ELEMENTS
 ========================================================= */
