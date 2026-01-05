@@ -367,6 +367,20 @@
     }
 
 /* =========================================================
+   LEGAL CONTENT (TERMS / PRIVACY)
+========================================================= */
+    .legal-content ul {
+      list-style-position: inside;
+      padding-left: 0;
+      margin-left: 0;
+    }
+      
+    .legal-content li {
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+
+/* =========================================================
    ABOUT SECTION
 ========================================================= */
     .about-content {
