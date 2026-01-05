@@ -166,21 +166,40 @@
   </div>
 </section>
 
-<!-- ================= FOOTER (UNCHANGED) ================= -->
+<!-- =========================================================
+     FOOTER
+========================================================= -->  
 <footer>
 
+  <!-- ================= SOCIAL LINKS ================= -->     
   <div class="footer-socials">
-    <a href="https://www.linkedin.com/company/block-beagle/" target="_blank"><img src="images/footer/linkedin.png"></a>
-    <a href="https://www.facebook.com/#" target="_blank"><img src="images/footer/facebook.png"></a>
-    <a href="https://www.instagram.com/#" target="_blank"><img src="images/footer/instagram.png"></a>
-    <a href="https://x.com/#" target="_blank"><img src="images/footer/twitter.png"></a>
-    <a href="https://t.me/BlockBeagle" target="_blank"><img src="images/footer/telegram2.png"></a>
-  </div>
+    <a href="https://www.linkedin.com/company/block-beagle/" target="_blank" rel="noopener noreferrer">
+      <img src="images/footer/linkedin.png" alt="LinkedIn">
+    </a>
 
+    <a href="https://www.facebook.com/#" target="_blank" rel="noopener noreferrer">
+      <img src="images/footer/facebook.png" alt="Facebook">
+    </a>
+
+    <a href="https://www.instagram.com/#" target="_blank" rel="noopener noreferrer">
+      <img src="images/footer/instagram.png" alt="Instagram">
+    </a>
+
+    <a href="https://x.com/#" target="_blank" rel="noopener noreferrer">
+      <img src="images/footer/twitter.png" alt="Twitter">
+    </a>
+
+    <a href="https://t.me/BlockBeagle" target="_blank" rel="noopener noreferrer">
+      <img src="images/footer/telegram2.png" alt="Telegram">
+    </a>
+  </div>
+     
+  <!-- ================= COPYRIGHT ================= -->
   <div class="footer-copyright">
     © 2025 Block Beagle. All rights reserved.
   </div>
-
+     
+  <!-- ================= LEGAL LINKS ================= -->
   <div class="footer-legal">
     <a href="/privacy-policy">Privacy Policy</a>
     <span class="footer-separator">•</span>
@@ -189,6 +208,24 @@
 
 </footer>
 
-<script src="script.js"></script>
+<!-- =========================================================
+     FLOATING / OVERLAY UI
+========================================================= -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<!-- ================= SUCCESS POPUP ================= -->     
+  <div class="success-popup" id="successPopup">
+    <div class="success-popup-content">
+      <div class="success-icon">✓</div>
+      <h3>Your message has been sent</h3>
+      <p>Thank you for contacting us. We'll get back to you soon!</p>
+      <button class="success-close-btn" id="closeSuccessPopup">OK</button>
+    </div>
+  </div>
+
+<!-- =========================================================
+     SCRIPTS
+========================================================= -->
+  <script src="script.js"></script>
 </body>
 </html>
