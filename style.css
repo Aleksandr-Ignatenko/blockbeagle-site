@@ -36,7 +36,7 @@
         radial-gradient(circle at 80% 80%, rgba(190, 138, 41, 0.04) 0%, transparent 50%),
         radial-gradient(rgba(190, 138, 41, 0.05) 1px, transparent 1px);
       background-size: 100% 100%, 100% 100%, 40px 40px;
-      background-attachment: fixed;
+      background-attachment: scroll;
     }
 
 /* =========================================================
