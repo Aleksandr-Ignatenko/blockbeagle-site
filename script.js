@@ -452,3 +452,12 @@
         successPopup.classList.remove('show');
       }
     });
+
+// Footer copyright year: keeps "2025" as launch year and appends the
+// current year automatically once it moves past 2025, so this never
+// needs a manual yearly edit across the site's pages.
+const copyrightYearEls = document.querySelectorAll('#copyright-year');
+const currentYear = new Date().getFullYear();
+copyrightYearEls.forEach((el) => {
+  el.textContent = currentYear > 2025 ? `2025–${currentYear}` : '2025';
+});
